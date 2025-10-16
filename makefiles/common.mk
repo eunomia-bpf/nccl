@@ -32,7 +32,7 @@ CUDA_MINOR = $(shell echo $(CUDA_VERSION) | cut -d "." -f 2)
 
 # You should define NVCC_GENCODE in your environment to the minimal set
 # of archs to reduce compile time.
-CUDA8_GENCODE = -gencode=arch=compute_60,code=sm_60 \
+CUDA8_GENCODE = -gencode=arch=compute_60,code=sm_120 \
                 -gencode=arch=compute_61,code=sm_61
 CUDA9_GENCODE = -gencode=arch=compute_70,code=sm_70
 CUDA10_GENCODE = -gencode=arch=compute_75,code=sm_75
